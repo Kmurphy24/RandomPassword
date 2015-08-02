@@ -7,7 +7,7 @@ public class passwordGeneratorMain {
 		
 		System.out.println(pass.testArray());
 		
-		System.out.println(pass.generatePassword(6));
+		System.out.println(pass.generatePassword(20));
 
 	}
 

@@ -1,24 +1,27 @@
 package password;
 
+import passwordGenerator.PasswordGenerator;
+
 public class Password {
 
-	private String passWord;
-	private int passwordLenght;
+	private String password;
+	private int passwordLength;
+	PasswordGenerator pwg = new PasswordGenerator();
 	
 	
 	public Password(int length){
-		this.passwordLenght = length;
+		this.passwordLength = length;
 	}
 	
 	public String createPassword(){
-		return passWord;
+		return password = pwg.generatePassword(passwordLength);
 	}
 	
 	public int getLength(){
-		return passwordLenght;
+		return passwordLength;
 	}
 	
 	public void setLength(int length){
-		this.passwordLenght = length;
+		this.passwordLength = length;
 	}
 }
