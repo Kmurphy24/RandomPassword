@@ -11,11 +11,16 @@ public class passwordGeneratorTest {
 	
 	@Before
 	public void setUp() throws Exception {
+		pass = new PasswordGenerator();
 	}
 
 	@Test
 	public void test() {
-		assertEquals("q", pass.testArray());
+		assertEquals("w", pass.testArray());
 	}
 
+	@Test
+	public void testgeneratePassword(){
+		assertEquals("qwerty", pass.generatePassword(6));
+	}
 }
